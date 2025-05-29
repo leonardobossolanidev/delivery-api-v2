@@ -42,3 +42,65 @@ Pensada para empresas e clientes, a API integra funcionalidades como cadastro, a
 1. Clone o repositório:
    ```bash
    git clone https://github.com/leonardobossolanidev/delivery-api-v2.git
+Configure o banco de dados MySQL Server e atualize as credenciais no arquivo src/main/resources/application.properties.
+
+Execute a aplicação:
+
+Com Maven instalado:
+
+bash
+Copiar
+Editar
+mvn spring-boot:run
+Ou com o wrapper Maven (Linux/Mac):
+
+bash
+Copiar
+Editar
+./mvnw spring-boot:run
+No Windows:
+
+powershell
+Copiar
+Editar
+mvnw.cmd spring-boot:run
+Acesse os endpoints via http://localhost:8080/api/entregas.
+
+📄 Endpoints Disponíveis
+Método	Endpoint	Descrição
+POST	/api/entregas	Criar nova entrega
+GET	/api/entregas	Listar todas as entregas
+GET	/api/entregas/{id}	Buscar entrega por ID
+PUT	/api/entregas/{id}	Atualizar entrega
+DELETE	/api/entregas/{id}	Remover entrega
+
+🔐 Segurança
+Autenticação JWT para proteger os recursos da API
+
+Endpoints protegidos para garantir que apenas usuários autenticados acessem
+
+🤝 Contribuindo
+Contribuições são muito bem-vindas! Para colaborar:
+
+Fork o repositório
+
+Crie uma branch com a sua feature (git checkout -b feature/nome-da-feature)
+
+Faça commit das suas alterações (git commit -m 'Adiciona nova feature')
+
+Faça push para a branch (git push origin feature/nome-da-feature)
+
+Abra um Pull Request aqui no GitHub
+
+📞 Contato
+Leonardo Bossolani Oliveira Mendes
+
+GitHub: leonardobossolanidev
+
+LinkedIn: linkedin.com/in/leonardobossolani
+
+📄 Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
+
+Gostou do projeto?
+Deixe uma ⭐ para apoiar o desenvolvimento!
